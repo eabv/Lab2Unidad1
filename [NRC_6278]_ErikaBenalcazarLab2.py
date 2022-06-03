@@ -121,16 +121,14 @@ class Grafo:
 #Main (Función principal de ejecución)
 if __name__ == "__main__":
     #Instancia el objeto Grafo, agrega valores
-     g = Grafo(6, dirigido = False)
+    g = Grafo(4, dirigido = False)
 
     #Agrega las aristas del objeto grafo
-    g.agregar_Arista(0, 1, 3)
-    g.agregar_Arista(2, 2, 1)
-    g.agregar_Arista(3, 2, 2)
-    g.agregar_Arista(4, 3, 3)
-    g.agregar_Arista(5, 0, 2)
-    g.agregar_Arista(1, 3, 4)
-    
+    g.agregar_Arista(0, 2, 3)
+    g.agregar_Arista(1, 3, 1)
+    g.agregar_Arista(3, 2, 1)
+    g.agregar_Arista(2, 3, 2)
+
     #Imprime la lista de adyacencia 
     g.imprimir_ListaAdj()
 
